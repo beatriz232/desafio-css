@@ -1,0 +1,159 @@
+/* ================================
+   Estilos Globais
+=================================== */
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: #f8f5f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================
+   Cabeçalho e Navegação
+=================================== */
+#cabecalho-principal {
+    background-color: #791563;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#cabecalho-principal nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#cabecalho-principal nav a.ativo,
+#cabecalho-principal nav a:hover {
+    background-color: #0675d0;
+}
+
+/* ================================
+   Footer
+=================================== */
+footer {
+    background-color: #791563;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* ================================
+   Cartões do Index
+=================================== */
+.cartao {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* ================================
+   Cardápio
+=================================== */
+.grid-cardapio {
+    text-align: center;
+    padding: 20px;
+}
+
+.subtitulo
+.grid-cardapio {
+    text-align: center;
+    padding: 20px;
+}
+
+.item-cardapio {
+    display: inline-block;
+    width: 45%;
+    background-color: #fdf1e6;
+    border: 1px solid #3a56f5;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.item-cardapio:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .item-cardapio {
+        width: 100%;
+    }
+}
+
+
+.item-cardapio button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #0a0f6a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* ================================
+   Formulário de Contato
+=================================== */
+.subtitulo {
+    text-align: center;
+    margin: 20px 0;
+}
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fdf1e6;
+    border-radius: 8px;
+    border: 1px solid #0c0cb0;
+}
+
+form label {
+
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1027d3;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0e99d9;
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #0a0f6a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #06b1d3;
+}
